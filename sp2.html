@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>危險性工作場所登錄系統</title>
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+    <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+    <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+<![endif]-->
+<link href="css/layout.css" rel="stylesheet">
+</head>
+<body>
+	<div class="wrap mp">
+        <header>
+            <h1><a href="#" class="logo1">危險性工作場所登錄系統</a></h1>
+            <!-- <h1><a href="#" class="logo2">製程安全管理資訊應用與交流網站</a></h1> -->
+            <nav>   
+                <ul>
+                  <li><a href="#">回首頁</a></li>
+                  <li><a href="#">網站導覽</a></li>
+              </ul>
+          </nav>
+      </header>
+      <main class="clear-fix">
+
+        <div class="Center">
+            <div id="Breadcrumb">
+                <ol class="Breadcrumb">
+                    <li><a href="#">首頁</a></li>
+                    <li class="active">化學品不相容性查詢</li>
+                </ol>
+            </div>
+            <div class="box spTable3">
+                <h2>化學品</h2>
+                <form action="">
+                    <table>
+                        <tr>
+                            <th width="20%">物質名稱：</th>
+                            <td>雙氧水</td>
+                        </tr>
+                        <tr>
+                            <th width="20%">反應群組分類：</th>
+                            <td>強氧化劑</td>
+                        </tr>
+                        <tr>
+                            <th width="20%">反應性警告：</th>
+                            <td>強氧化劑</td>
+                        </tr>
+                        <tr>
+                            <th width="20%">描述：</th>
+                            <td>於低溫下呈結晶固體狀。有輕微刺激性，刺激性氣味。用於相當廣泛，如:1.紡織品、木漿、毛髮、毛皮等的漂白和除臭。2.作為有機和無機過氧化物的來源。3.火箭燃料。4.製造甘油。5.氧化劑。6.在水和污水處理中代替氯。……等等。</td>
+                        </tr>
+                        <tr>
+                            <th width="20%">反應性：</th>
+                            <td>使用過氧化氫（特別是高濃度溶液）相關的危害已有詳細記載。在65％過氧化物的催化分解過程中釋放出足夠的能量以蒸發所有水並點燃附近的可燃物質。大多數纖維素材料含有足夠的催化劑以引起90％過氧化物的自燃。濃縮過氧化物的污染物會導致爆炸。易氧化的物質或含有重金屬的鹼性物質可能會劇烈反應。溶劑（丙酮，乙醇，甘油）會在超過30％濃度的過氧化物的混合物中爆炸，威力隨濃度增加而增加。濃縮的過氧化物可能在與鐵，銅，鉻和大多數其他金屬或其鹽以及灰塵（通常含有鐵鏽）接觸時劇烈分解。在真空下濃縮期間過氧化氫水溶液或過氧化氫水醇溶液，當濃度足夠高（> 90％）時會發生劇烈爆炸。醇與濃硫
+
+                            酸和強過氧化氫的混合物會引起爆炸。</td>
+                        </tr>
+                        <tr>
+                            <th width="20%">空氣與水反應性：</th>
+                            <td>溶於水</td>
+                        </tr>
+                        <tr>
+                            <th width="20%">健康危害：</th>
+                            <td>對皮膚，眼睛和粘膜有很強的刺激性。</td>
+                        </tr>
+                    </table>
+                    <div class="btn_grp">
+                        <input name="" type="submit" value="關閉視窗" class="s-btn" />
+                    </div>
+                </form>
+            </div>
+
+        </div>
+    </main>
+    <footer>
+        <p>勞動部職業安全衛生署 版權所有© 2018 All Right Reserved&nbsp;&nbsp;&nbsp;開發單位：凌網科技股有限公司</p>
+    </footer>
+</div>
+</body>
+</html>
+
+<script src="js/jquery.1.12.4.min.js"></script>
+<script>
+    $('.Menu>ul>li:first-child>a').addClass('Active');
+    $('.Menu>ul>li>a').click(function(e){
+        // alert('有');
+        $('.Menu .One').removeClass('Active');
+        $(this).addClass('Active');
+    })
+</script>

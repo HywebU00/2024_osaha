@@ -1,0 +1,540 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+
+
+
+
+
+
+
+
+
+
+
+
+<script type="text/javascript" src="/hwripsm/html/javascript/jquery/jquery-3.4.1.js"></script>	
+<script type="text/javascript" src="/hwripsm/html/javascript/jquery/jquery-3.4.1.min.js"></script>	
+<script type="text/javascript" src="/hwripsm/html/javascript/jquery/jquery-migrate-3.0.1.min.js"></script>	
+
+<link href="/hwripsm/html/styles/jquery/jquery-ui-1.12.1/jquery-ui.css" rel="stylesheet" type="text/css">
+<link href="/hwripsm/html/styles/jquery/jquery-ui-1.12.1/jquery-ui.min.css" rel="stylesheet" type="text/css">
+<script type="text/javascript" src="/hwripsm/html/javascript/jquery/jquery-ui-1.12.1/jquery-ui.js"></script>
+<script type="text/javascript" src="/hwripsm/html/javascript/jquery/jquery-ui-1.12.1/jquery-ui.min.js"></script>
+
+<script type="text/javascript"
+src="/hwripsm/html/javascript/jquery/jquery.cookie.js?1=1">
+</script>	
+
+<script type="text/javascript"
+src="/hwripsm/html/javascript/jquery/jquery.blockUI.js">
+</script>
+
+<!-- jquery file upload -->
+<link href="/hwripsm/html/styles/jquery/upload/jquery.fileupload.css"
+rel="stylesheet" type="text/css" />
+<script type="text/javascript"
+src="/hwripsm/html/javascript/jquery/jquery.ui.widget.js"></script>
+<script type="text/javascript"
+src="/hwripsm/html/javascript/jquery/upload/jquery.iframe-transport.js"></script>
+<script type="text/javascript" 
+src="/hwripsm/html/javascript/jquery/upload/jquery.fileupload.js"></script>
+
+<!-- datepicker zh-TW -->
+<script
+src="/hwripsm/html/javascript/jquery/jquery.ui.datepicker-zh-TW.js"></script>
+
+<script
+src="/hwripsm/html/javascript/jquery/jquery.maskedinput.js"></script>	
+
+<!-- multi calendar select -->	
+<script
+src="/hwripsm/html/javascript/jquery/jquery-ui.multidatespicker.js"></script>
+
+<script
+src="/hwripsm/html/javascript/jquery/jquery.popupWindow.js"></script>
+
+<!-- datetimepicker -->
+<script
+src="/hwripsm/html/javascript/jquery/jquery-ui-timepicker-addon.js"></script>	
+<link rel="Stylesheet" type="text/css" 
+href="/hwripsm/html/styles/jquery/jquery-ui-timepicker-addon.css" />
+
+
+<!-- smooth div scroll -->
+<link rel="Stylesheet" type="text/css" href="/hwripsm/html/styles/jquery/smoothDivScroll/smoothDivScroll.css" />
+<script src="/hwripsm/html/javascript/jquery/smoothDivScroll/jquery.mousewheel.min.js"></script>	 
+<script src="/hwripsm/html/javascript/jquery/smoothDivScroll/jquery.kinetic.min.js"></script>
+<script src="/hwripsm/html/javascript/jquery/smoothDivScroll/jquery.smoothdivscroll-1.3-min.js"></script>
+
+
+<!-- jquery plugin select2 -->
+<script src="/hwripsm/html/javascript/jquery/select2/select2.min.js"></script>
+<link rel="Stylesheet" type="text/css" 
+href="/hwripsm/html/styles/jquery/select2/select2.min.css" />
+
+<script>
+	//example $("#element").exists();
+	$.fn.exists = function () {
+       return this.length !== 0;
+   }
+   
+	//fix ajax always happen jqXHR.status === 0
+	$(document).ajaxError(function(e, jqxhr, settings, exception) {
+		if (jqxhr.readyState == 0 || jqxhr.status == 0) {
+			alert("ajaxError(){ jqxhr.readyState == 0 || jqxhr.status == 0 }")
+			return; // Skip this error
+		}
+	});
+	
+</script>
+
+
+
+
+<html lang="zh-TW" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <link href="css/layout.css" rel="stylesheet">
+
+    <script src='https://www.google.com/recaptcha/api.js'></script>
+
+    <script type="text/javascript"src="/hwripsm/html/javascript/common_datepicker.js"></script>
+    <style>	.errorMessage {	color: red;	font-weight: bold;	font-size: 15px;}	
+    .sr-only{position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0,0,0,0);border:0}
+    .sr-only-focusable:active,.sr-only-focusable:focus{position:static;width:auto;height:auto;margin:0;overflow:visible;clip:auto}
+    .g-recaptcha{
+        width: desired_width;
+        border-radius: 4px;
+        border-right: 1px solid #d8d8d8;
+        overflow: hidden;
+    }
+</style>
+<title>製程安全管理資訊應用與交流網站-公告</title>
+</head>
+<body>
+	<div class="wrap mp">
+		
+
+
+
+
+
+
+
+
+
+
+
+
+        <a href="#zone.content11" id="gotocenter" title="跳到主要內容" tabindex="1" class="sr-only sr-only-focusable" >跳到主要內容</a>
+        <header>
+         <nav>   
+           <ul>
+               <a href="#U" id="U"  title="上方區塊" accesskey="U" class="sr-only sr-only-focusable">:::</a>
+               <!-- 測試機板 -->
+
+
+
+               <!-- 正式機板 -->
+               <li><a href="/hwripsm/login.action">首頁</a></li> 
+               <li><a href="/hwripsm/public/sitemap.action">網站導覽</a></li>
+               <li><a href="https://hwri.osha.gov.tw/hwripsm/login.action" target="_blank" onclick="{if(confirm('另開新視窗?')){return true;}return false;}" title="另開新視窗">危險性工作場所登記系統</a></li>
+           </ul>
+       </nav>
+       <h1><a href="/hwripsm/login.action" class="logo2" title="製程安全管理資訊應用與交流網站">製程安全管理資訊應用與交流網站</a></h1>
+   </header>
+
+
+   
+   
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+   
+
+
+
+   <style type="text/css">
+    /* Clear calendar's float, using dialog inbuilt form element */
+    #
+    Container .bd form {
+       clear: left;
+   }
+
+   /* Have calendar squeeze upto bd bounding box */
+   #
+   Container .bd {
+       padding: 0;
+   }
+
+   #
+   Container .hd {
+       text-align: left;
+   }
+
+   /* Center buttons in the footer */
+   #
+   Container .ft .button-group {
+       text-align: center;
+   }
+
+   /* Prevent border-collapse:collapse from bleeding through in IE6, IE7 */
+   #
+   Container_c.yui-overlay-hidden table { *
+       display: none;
+   }
+
+   /* Remove calendar's border and set padding in ems instead of px, so we can specify an width in ems for the container */
+   #cal {
+       border: none;
+       padding: 1em;
+   }
+
+   /* Datefield look/feel */
+   .datefield {
+       position: relative;
+       top: 10px;
+       left: 10px;
+       white-space: nowrap;
+       border: 1px solid black;
+       background-color: #eee;
+       width: 25em;
+       padding: 5px;
+   }
+
+   .datefield input,.datefield button,.datefield label {
+       vertical-align: middle;
+   }
+
+   .datefield label {
+       font-weight: bold;
+   }
+
+   .datefield input {
+       width: 15em;
+   }
+
+   .datefield button {
+       padding: 0 5px 0 5px;
+       margin-left: 2px;
+   }
+
+   .datefield button img {
+       padding: 0;
+       margin: 0;
+       vertical-align: middle;
+   }
+
+   /* Example box */
+   .box {
+       position: relative;
+       height: 30em;
+   }
+</style>
+
+<script type="text/javascript">
+
+    Date.prototype.format = function(f)
+    {
+        if (!this.valueOf())
+            return ' ';
+
+        var d = this;
+        var yearOffset = 0
+
+        
+
+        return f.replace(/(yyyy|MM|dd|hh|nn|ss|a\/p)/gi,
+            function($1)
+            {
+                switch ($1)
+                {
+                    case 'yyyy': return d.getFullYear() - yearOffset;
+                    case 'MM':   return (d.getMonth() < 9 ? '0' : '') + (d.getMonth() + 1);
+                    case 'dd':   return (d.getDate() < 10 ? '0' : '') + d.getDate();
+                    case 'hh':   return ((d.getHours() % 12 || 12) < 10 ? '0' : '') + (d.getHours() % 12 || 12);
+                    case 'nn':   return (d.getMinutes() < 10 ? '0' : '') + d.getMinutes();
+                    case 'ss':   return (d.getSeconds() < 10 ? '0' : '') + d.getSeconds();
+                    case 'a/p':  return d.getHours() < 12 ? 'a' : 'p';
+                }
+            }
+            );
+    }
+
+</script>
+
+<script type="text/javascript">
+
+	function addCalendarEvent(buttonId, inputFieldId){
+        var Event = YAHOO.util.Event,
+        Dom = YAHOO.util.Dom;
+
+        var calendarShowButton = Dom.get(buttonId);
+        
+        Event.on(calendarShowButton, "click", function() {
+            var calendarDialog, calendarPanel;
+            
+            // Lazy Dialog Creation - Wait to create the Dialog, and setup document click listeners, until the first time the button is clicked.
+            if (!calendarDialog) {
+               
+                // Hide Calendar if we click anywhere in the document other than the calendar
+                Event.on(document, "click", function(e) {
+                    var el = Event.getTarget(e);
+                    var dialogEl = calendarDialog.element;
+                    if (el != dialogEl && !Dom.isAncestor(dialogEl, el) && el != calendarShowButton && !Dom.isAncestor(calendarShowButton, el)) {
+                        calendarDialog.hide();
+                    }
+                });
+                
+                function resetHandler() {
+                    // Reset the current calendar page to the select date, or 
+                    // to today if nothing is selected.
+                    var selDates = calendarPanel.getSelectedDates();
+                    var resetDate;
+                    
+                    if (selDates.length > 0) {
+                        resetDate = selDates[0];
+                    } else {
+                        resetDate = calendarPanel.today;
+                    }
+                    
+                    calendarPanel.cfg.setProperty("pagedate", resetDate);
+                    calendarPanel.render();
+                }
+                
+                function closeHandler() {
+                    calendarDialog.hide();
+                }
+                
+                calendarDialog = new YAHOO.widget.Dialog(inputFieldId + "Container", {
+                    visible:false,
+                    context:[buttonId, "tl", "bl"],
+                    buttons:[ {text:"重設", handler: resetHandler, isDefault:true}, {text:"關閉", handler: closeHandler}],
+                    draggable:false,
+                    close:true
+                });
+                calendarDialog.setHeader('\u9078\u64c7\u65e5\u671f');
+                calendarDialog.setBody('<div id="cal"></div>');
+                calendarDialog.render(document.body);
+                
+                calendarDialog.showEvent.subscribe(function() {
+                    if (YAHOO.env.ua.ie) {
+                        // Since we're hiding the table using yui-overlay-hidden, we 
+                        // want to let the dialog know that the content size has changed, when
+                        // shown
+                        calendarDialog.fireEvent("changeContent");
+                    }
+                });
+            }
+            
+            // Lazy Calendar Creation - Wait to create the Calendar until the first time the button is clicked.
+            if (!calendarPanel) {
+            	var dateFieldDate;
+            	var dateFieldValue = Dom.get(inputFieldId).value;
+            	
+            	if(dateFieldValue == "")
+            		dateFieldDate = new Date();
+            	else {
+            		var year = parseInt(dateFieldValue.substring(0, dateFieldValue.indexOf("/")));
+            		
+            		
+            		
+            		dateFieldDate = new Date(year + dateFieldValue.substring(dateFieldValue.indexOf("/")));
+            	}
+            	
+                calendarPanel = new YAHOO.widget.Calendar("cal", {
+                	pagedate:dateFieldDate.format("MM/yyyy"),
+                	selected:dateFieldDate.format("MM/dd/yyyy"),
+                	navigator:true,
+                    iframe:false,          // Turn iframe off, since container has iframe support.
+                    hide_blank_weeks:true // Enable, to demonstrate how we handle changing height, using changeContent
+                    
+                });
+
+                
+                
+                
+                // Date labels for zh-TW
+                var months = ["\u4e00\u6708","\u4e8c\u6708", "\u4e09\u6708", "\u56db\u6708", "\u4e94\u6708", "\u516d\u6708", "\u4e03\u6708", "\u516b\u6708", "\u4e5d\u6708", "\u5341\u6708", "\u5341\u4e00\u6708", "\u5341\u4e8c\u6708"];
+                var weekdays = ["\u65e5", "\u4e00", "\u4e8c", "\u4e09", "\u56db", "\u4e94", "\u516d"];
+                
+                calendarPanel.cfg.setProperty("MONTHS_SHORT", months);
+                calendarPanel.cfg.setProperty("MONTHS_LONG", months);
+                calendarPanel.cfg.setProperty("WEEKDAYS_1CHAR", weekdays);
+                calendarPanel.cfg.setProperty("WEEKDAYS_SHORT", weekdays);
+                calendarPanel.cfg.setProperty("WEEKDAYS_MEDIUM", weekdays);
+                calendarPanel.cfg.setProperty("WEEKDAYS_LONG", weekdays);
+                calendarPanel.cfg.setProperty("MY_LABEL_YEAR_POSITION", 1);
+                calendarPanel.cfg.setProperty("MY_LABEL_MONTH_POSITION", 2);
+                calendarPanel.cfg.setProperty("MY_LABEL_YEAR_SUFFIX", "\u5E74");
+                
+                
+                calendarPanel.render();
+                
+                calendarPanel.selectEvent.subscribe(function() {
+                	
+                    if (calendarPanel.getSelectedDates().length > 0) {
+                        var selDate = calendarPanel.getSelectedDates()[0];
+                        
+                        Dom.get(inputFieldId).value = selDate.format("yyyy/MM/dd");
+                    } else {
+                        Dom.get(inputFieldId).value = "";
+                    }
+
+                    
+                    
+                    calendarDialog.hide();
+                });
+                
+                calendarPanel.renderEvent.subscribe(function() {
+                    // Tell Dialog it's contents have changed, which allows 
+                    // container to redraw the underlay (for IE6/Safari2)
+                    calendarDialog.fireEvent("changeContent");
+                });
+            }
+            
+            var seldate = calendarPanel.getSelectedDates();
+            
+            if (seldate.length > 0) {
+                // Set the pagedate to show the selected date if it exists
+                calendarPanel.cfg.setProperty("pagedate", seldate[0]);
+                calendarPanel.render();
+            }
+            
+            calendarDialog.show();
+        });
+}
+</script>
+
+
+<head>
+<!-- <style>
+	.upload-operation-area{
+	display:none;
+	}
+	.fileImage{
+	width:100%;
+	}
+	.description {
+    color: red;
+    }    
+</style> -->
+</head>
+
+<body>
+	<div class="wrap mp">
+        <main class="clear-fix">
+          <div class="Center">
+              <a href="#zone.content11" title="中央內容區塊" accesskey="C" class="sr-only sr-only-focusable" >:::</a>
+              <div id="Breadcrumb">
+                  <ol class="Breadcrumb">
+                     <li><a href="/hwripsm/login.action?ispsm=true">首頁</a></li>
+                     <li class="active">製程安全學堂</li>
+                 </ol>
+             </div>
+             <!--cp Start-->
+             <div class="cp">
+
+                <!--           <ul class="info"> -->
+
+                    <!--           </ul> -->
+
+                    <h2>11<p style="color: red;">發布日期: 2019-04-12</p></h2>
+                    <p>11</p>
+                    <p></p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+                    <h3>附檔(需登入後才能下載)： </h3>
+                    
+                    <ul class="info">
+                     <li>測試文件.pdf		
+                        
+                       <span class="description">(下載次數:3)</span>
+                       
+                   </li>
+               </ul>
+               
+
+           </div>
+
+       </div>
+   </main>
+</div>
+</body>
+
+<script type="text/javascript" src="/hwripsm/html/javascript/jquery/jquery-3.4.1.js"></script>
+
+
+
+
+
+
+
+
+
+
+
+<!DOCTYPE html>
+
+<div id="zone.footer">
+
+    <input type="hidden" name="ip" id="ip" value="{總瀏覽人次=22711, 本日瀏覽人次=70}" >   
+    <!--footer Start-->
+    <footer>
+        <p id='comes' name='comes' style="position: absolute;left: 80%;"></p>
+        <p style="position: absolute;right: 75%;padding-top: 10px;">
+          <a href="https://www.handicap-free.nat.gov.tw/Applications/Detail?category=20190128180053" title="無障礙A+(另開新視窗)" target="_blank" >
+             <img src="images/handicap.png" border="0" width="88" height="31" alt="無障礙A+(另開新視窗)" />
+         </a>
+         <a href="https://www.gov.tw/Default.aspx" title="E政府(另開新視窗)" target="_blank">
+             <img src="images/gov.png" border="0" width="43" height="31" alt="E政府(另開新視窗)" />
+         </a>
+     </p>
+     <p>勞動部職業安全衛生署 版權所有© 2018 All Right Reserved&nbsp;&nbsp;&nbsp;執行單位:安全衛生技術中心</p>
+ </footer>
+ <!--footer End--> 
+</div>
+
+<script>
+	window.onload = function() {
+		var ip = document.getElementById("ip").value;
+		ip=ip.replace(/,/g,' ');
+		ip=ip.replace(/=/g,' ');
+		ip=ip.replace('{','');
+		ip=ip.replace('}','');
+		document.getElementById("comes").innerHTML = ip;
+	}
+</script>
+</div>
+</body>
+</html>

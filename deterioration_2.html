@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>危險性工作場所登錄系統</title>
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+    <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+    <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+<![endif]-->
+<style type="text/css">
+    .sr-only{position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0,0,0,0);border:0}
+    .sr-only-focusable:active,.sr-only-focusable:focus{position:static;width:auto;height:auto;margin:0;overflow:visible;clip:auto}
+    .g-recaptcha{
+        width: desired_width;
+        border-radius: 4px;
+        border-right: 1px solid #d8d8d8;
+        overflow: hidden;
+    }
+</style>
+<link href="css/layout.css" rel="stylesheet">
+</head>
+<body>
+	<div class="wrap mp">
+        <header>
+            <!-- <h1><a href="#" class="logo1">危險性工作場所登錄系統</a></h1> -->
+            <h1><a href="#" class="logo2">製程安全管理資訊應用與交流網站</a></h1>
+            <nav>   
+                <ul>
+                    <a href="#U" id="U" name="U" title="上方區塊" accesskey="U" class="sr-only sr-only-focusable">:::</a>                
+
+                    <!--正式機板 -->
+                    <li><a href="/hwripsm/login.action">首頁</a></li>
+                    <li><a href="/hwripsm/public/sitemap.action">網站導覽</a></li>
+                    <li><a href="https://hwri.osha.gov.tw/hwripsm/login.action" target="_blank" title="另開新視窗">危險性工作場所資訊管理系統</a></li>                
+                </ul>
+            </nav>
+        </header>
+        <main class="clear-fix">
+
+            <div class="Center">
+                <div id="Breadcrumb">
+                    <ol class="Breadcrumb">
+                        <li><a href="#">首頁</a></li>
+                        <li class="active">設備管線劣化機制查詢</li>
+                    </ol>
+                </div>
+                <div class="box spTable4">
+                    <h2>腐蝕劣化機制總表</h2>
+                    <table>
+                        <tr>
+                            <th width="20%" class="aCenter">DM編號</th>
+                            <th>劣化機制</th>
+                        </tr>
+                        <tr>
+                            <td class="date">1</td>
+                            <td><a href="deterioration_4.html">硫化腐蝕</a></td>
+                        </tr>
+                        <tr>
+                            <td class="date">2</td>
+                            <td><a href="deterioration_4.html">濕硫化氫損傷(起泡/HIC/SOHIC/SSC)</a></td>
+                        </tr>
+                        <tr>
+                            <td class="date">3</td>
+                            <td><a href="#">潛變斷裂和應力斷裂</a></td>
+                        </tr>
+                        <tr>
+                            <td class="date">4</td>
+                            <td><a href="#">高溫H2/H2S腐蝕</a></td>
+                        </tr>
+                        <tr>
+                            <td class="date">5</td>
+                            <td><a href="#">聚硫酸應力腐蝕龜裂</a></td>
+                        </tr>
+                        <tr>
+                            <td class="date">6</td>
+                            <td><a href="#">環烷酸腐蝕</a></td>
+                        </tr>
+                        <tr>
+                            <td class="date">7</td>
+                            <td><a href="#">氯化銨腐蝕</a></td>
+                        </tr>
+                        <tr>
+                            <td class="date">8</td>
+                            <td><a href="#">鹽酸腐蝕</a></td>
+                        </tr>
+                        <tr>
+                            <td class="date">9</td>
+                            <td><a href="#">高溫氫攻擊</a></td>
+                        </tr>
+                        <tr>
+                            <td class="date">10</td>
+                            <td><a href="#">氧化</a></td>
+                        </tr>
+                        <tr>
+                            <td class="date">11</td>
+                            <td><a href="#">熱疲勞</a></td>
+                        </tr>
+                    </table>
+                </div>
+
+            </div>
+        </main>
+        <footer>
+            <p>勞動部職業安全衛生署 版權所有© 2018 All Right Reserved&nbsp;&nbsp;&nbsp;開發單位：凌網科技股有限公司</p>
+        </footer>
+    </div>
+</body>
+</html>
+
+<script src="js/jquery.1.12.4.min.js"></script>
+<script>
+    $('.Menu>ul>li:first-child>a').addClass('Active');
+    $('.Menu>ul>li>a').click(function(e){
+        // alert('有');
+        $('.Menu .One').removeClass('Active');
+        $(this).addClass('Active');
+    })
+</script>

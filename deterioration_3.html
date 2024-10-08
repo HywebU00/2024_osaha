@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>危險性工作場所登錄系統</title>
+  <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+  <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+    <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+    <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+  <![endif]-->
+  <style type="text/css">
+    .sr-only{position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0,0,0,0);border:0}
+    .sr-only-focusable:active,.sr-only-focusable:focus{position:static;width:auto;height:auto;margin:0;overflow:visible;clip:auto}
+    .g-recaptcha{
+      width: desired_width;
+      border-radius: 4px;
+      border-right: 1px solid #d8d8d8;
+      overflow: hidden;
+    }
+  </style>
+  <link href="assets/fontello/css/fontello.css" rel="stylesheet">
+  <!--  fancybox css -->
+  <link rel="stylesheet" type="text/css" href="css/jquery.fancybox.min.css">
+
+  <link href="css/layout.css" rel="stylesheet">
+</head>
+<body>
+	<div class="wrap mp">
+    <header>
+      <h1><a href="" class="logo2">製程安全管理資訊應用與交流網站</a></h1>
+      <!-- <h1><a href="#" class="logo2">製程安全管理資訊應用與交流網站</a></h1> -->
+      <nav>   
+        <ul>
+          <a href="#U" id="U" name="U" title="上方區塊" accesskey="U" class="sr-only sr-only-focusable">:::</a>                
+
+          <!--正式機板 -->
+          <li><a href="/hwripsm/login.action">首頁</a></li>
+          <li><a href="/hwripsm/public/sitemap.action">網站導覽</a></li>
+          <li><a href="https://hwri.osha.gov.tw/hwripsm/login.action" target="_blank" title="另開新視窗">危險性工作場所資訊管理系統</a></li>                
+        </ul>
+      </nav>
+
+    </header>
+    <main class="clear-fix">
+
+      <div class="Center">
+        <div id="Breadcrumb">
+          <ol class="Breadcrumb">
+            <li><a href="#">首頁</a></li>
+            <li class="active">設備管線劣化機制查詢</li>
+          </ol>
+        </div>
+
+        <!--sp-QA Start-->
+        <div class="box sp-QA">
+          <h2>問卷</h2>
+          <div class="remark">
+            <p class="t1">註一：</p>
+            <ol>
+              <li>問題 <span class="num">1-9</span>：冶金組織(材料微結構)及機械力破壞劣化機制</li>
+              <li>問題 <span class="num">10-20</span>：均勻或局部腐蝕</li>
+              <li>問題 <span class="num">21-22</span>：高溫腐蝕</li>
+              <li>問題 <span class="num">23-29</span>：環境因子誘發龜裂</li>
+              <li>問題 <span class="num">30-41</span>：煉油工業之腐蝕劣化機制</li>
+            </ol>
+            <p class="t1">註二：</p>
+            <ol>
+              <li>若「設備/組件材質」及「劣化機制發生條件」均為Y，則篩選結果為Y󠄁，代表該劣化機制可能發生。</li>
+              <li>若「設備/組件材質」及「劣化機制發生條件」其中一項為N，則篩選結果為N，代表該劣化機制不會發生。</li>
+            </ol>
+          </div>
+          <form action="">
+            <table cellspacing="0" cellpadding="0" width="100%" summary="*" border="1">
+              <tr>
+                <th scope="col" width="10%">【問題1】</th>
+                <td>
+                  <ul>
+                    <li class="t2">DM編號 31</li>
+                    <li>脆性斷裂 Brittle Fracture</li>
+                    <li>金屬在受力狀況下，沒有發生明顯的塑性形變而斷裂的現象，此為突發性破裂而使設備失效。通常多發生在低溫操作，因操作溫度低於金屬韌脆轉換溫度而發生脆性斷裂。</li>
+                    <li>
+                      <!-- q-list star -->
+                      <div class="q-list">
+                        <!-- fun-block1 star -->
+                        <div class="fun-block">
+                          <div class="radio_grp form_inline">
+                            <label><input name="radioSample" type="radio" value="">是</label>
+                            <label><input name="radioSample" type="radio" value="">否</label>
+                          </div>
+                          <div class="datainfo">
+                            設備/組件材質：<br>
+                            ● 碳鋼<br>
+                            ● 低合金鋼<br>
+                            ● 400系列不銹鋼<br>
+                          </div>
+                        </div>
+                        <!-- fun-block1 end -->
+
+                        <!-- fun-block2 star -->
+                        <div class="fun-block">
+                          <div class="radio_grp form_inline">
+                            <label><input name="radioSample" type="radio" value="">是</label>
+                            <label><input name="radioSample" type="radio" value="">否</label>
+                          </div>
+                          <div class="datainfo">
+                            劣化機制發生條件為：<br>
+                            符合下列其中一種條件：<br>
+                            1.低溫操作：操作溫度低於金屬韌脆轉換溫度。<br>
+                            2.設備/組件為脆性材質且具有瑕疵(flaw)。<br>
+                            脆性材質：金屬因相關脆化機制產生脆性相(embrittling phases)。<br>
+                          </div>
+                        </div>
+                        <!-- fun-block2 end -->
+                      </div>
+                      <!-- q-list end -->
+                    </li>
+                  </ul>
+                </td>
+              </tr>
+              <tr>
+                <th scope="col" width="10%">【問題2】</th>
+                <td>
+                  <ul>
+                    <li class="t2">DM編號 3</li>
+                    <li>潛變與應力斷裂 Creep and Stress Rupture</li>
+                    <li>金屬材料在高溫且受力(低於材料的降伏強度)狀態下，會緩慢且持續變形，最終導致破裂。</li>
+                    <li>
+                      <!-- q-list star -->
+                      <div class="q-list">
+                        <!-- fun-block1 star -->
+                        <div class="fun-block">
+                          <div class="radio_grp form_inline">
+                            <label><input name="radioSample" type="radio" value="">是</label>
+                            <label><input name="radioSample" type="radio" value="">否</label>
+                          </div>
+                          <div class="datainfo">
+                            設備/組件材質：<br>
+                            ● 所有金屬、合金<br>
+                          </div>
+                        </div>
+                        <!-- fun-block1 end -->
+
+                        <!-- fun-block2 star -->
+                        <div class="fun-block">
+                          <div class="radio_grp form_inline">
+                            <label><input name="radioSample" type="radio" value="">是</label>
+                            <label><input name="radioSample" type="radio" value="">否</label>
+                          </div>
+                          <div class="datainfo">
+                            劣化機制發生條件為：<br>
+                            設備組件的操作溫度高於材質潛變發生門檻溫度。潛變發生門檻溫度參閱API 571表4.3。<br>
+                          </div>
+                        </div>
+                        <!-- fun-block2 end -->                        
+                      </div>
+                      <!-- q-list end -->
+                    </li>
+                  </ul>
+                </td>
+              </tr>
+              <tr>
+                <th scope="col" width="10%">【問題3】</th>
+                <td>
+                  <ul>
+                    <li class="t2">DM編號 12</li>
+                    <li>熱疲勞 Thermal Fatigue</li>
+                    <li>材料經歷大幅度且週期性的溫度變化，產生週期性熱應力，經歷一定週期數後可能生成疲勞裂紋。</li>
+                    <li>
+                      <!-- q-list star -->
+                      <div class="q-list">
+                        <!-- fun-block1 star -->
+                        <div class="fun-block">
+                          <div class="radio_grp form_inline">
+                            <label><input name="radioSample" type="radio" value="">是</label>
+                            <label><input name="radioSample" type="radio" value="">否</label>
+                          </div>
+                          <div class="datainfo">
+                            設備/組件材質：<br>
+                            ● 所有工程材料<br>
+                          </div>
+                        </div>
+                        <!-- fun-block1 end -->
+
+                        <!-- fun-block2 star -->
+                        <div class="fun-block">
+                          <div class="radio_grp form_inline">
+                            <label><input name="radioSample" type="radio" value="">是</label>
+                            <label><input name="radioSample" type="radio" value="">否</label>
+                          </div>
+                          <div class="datainfo">
+                            劣化機制發生條件為：<br>
+                            設備/組件有高低溫反覆操作之情況(溫度化幅度大於93℃(200℉))。<br>
+                          </div>
+                        </div>
+                        <!-- fun-block2 end -->
+                      </div>
+                      <!-- q-list end -->
+
+                    </li>
+                  </ul>
+                </td>
+              </tr>
+              <tr>
+                <th scope="col" width="10%">【問題4】</th>
+                <td>
+                  <ul>
+                    <li class="t2">DM編號 30</li>
+                    <li>短期過熱–應力破裂 Short Term Overheating – Stress Rupture</li>
+                    <li>設備發生過熱情形時，受到低應力作用就可能產生永久變形(例如鼓起bulging)，最終導致破裂而使設備失效。</li>
+                    <li>
+                      <!-- q-list star -->
+                      <div class="q-list">
+                        <!-- fun-block1 star -->
+                        <div class="fun-block">
+                          <div class="radio_grp form_inline">
+                            <label><input name="radioSample" type="radio" value="">是</label>
+                            <label><input name="radioSample" type="radio" value="">否</label>
+                          </div>
+                          <div class="datainfo">
+                            設備/組件材質：<br>
+                            ● 所有加熱爐管的材料<br>
+                            ● 一般常見結構材料<br>
+                          </div>
+                        </div>
+                        <!-- fun-block1 end -->
+
+                        <!-- fun-block2 star -->
+                        <div class="fun-block">
+                          <div class="radio_grp form_inline">
+                            <label><input name="radioSample" type="radio" value="">是</label>
+                            <label><input name="radioSample" type="radio" value="">否</label>
+                          </div>
+                          <div class="datainfo">
+                            劣化機制發生條件為：<br>
+                            符合下列其中一種條件：<br>
+                            1.操作溫度高於設計溫度，因而可能發生過熱。<br>
+                            2.局部區域因某些因素(例如加熱爐管節結焦)導致受熱不均的局部過熱，導致永久變形(例如鼓起bulging)。<br>
+                          </div>
+                        </div>
+                        <!-- fun-block2 end -->
+                      </div>
+                      <!-- q-list end -->
+
+                    </li>
+                  </ul>
+                </td>
+              </tr>
+            </table>
+            <div class="btn_grp" id="submitBlock">
+              <input type="button" value="確認送出" class="s-btn" onclick="$('#listDamageMechanismFilter').submit();">
+              <input type="button" value="回前頁" class="r-btn" onclick="$('#viewDamageMechanismNote').submit();">
+            </div>
+          </form>
+
+        </div>
+        <!--sp-QA End-->
+
+
+      </div>
+    </main>
+    <footer>
+      <p>勞動部職業安全衛生署 版權所有© 2018 All Right Reserved&nbsp;&nbsp;&nbsp;開發單位：凌網科技股有限公司</p>
+    </footer>
+  </div>
+</body>
+</html>
+
+<script src="js/jquery.1.12.4.min.js"></script>
+
+<!-- fancybox js -->
+<script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+<script src="js/jquery.fancybox.min.js"></script>
+<script>
+  $('[data-fancybox="images"]').fancybox({
+    buttons : [ 
+    'slideShow',
+    'share',
+    'zoom',
+    'fullScreen',
+    'close'
+    ],
+    thumbs : {
+      autoStart : true
+    }
+  });
+</script>
+
+<script>
+  $('.Menu>ul>li:first-child>a').addClass('Active');
+  $('.Menu>ul>li>a').click(function(e){
+        // alert('有');
+        $('.Menu .One').removeClass('Active');
+        $(this).addClass('Active');
+      })
+    </script>

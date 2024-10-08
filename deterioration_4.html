@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>危險性工作場所登錄系統</title>
+  <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+  <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+    <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+    <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+  <![endif]-->
+  <style type="text/css">
+    .sr-only{position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0,0,0,0);border:0}
+    .sr-only-focusable:active,.sr-only-focusable:focus{position:static;width:auto;height:auto;margin:0;overflow:visible;clip:auto}
+    .g-recaptcha{
+      width: desired_width;
+      border-radius: 4px;
+      border-right: 1px solid #d8d8d8;
+      overflow: hidden;
+    }
+  </style>
+  <link href="assets/fontello/css/fontello.css" rel="stylesheet">
+  <!--  fancybox css -->
+  <link rel="stylesheet" type="text/css" href="css/jquery.fancybox.min.css">
+
+  <link href="css/layout.css" rel="stylesheet">
+</head>
+<body>
+	<div class="wrap mp">
+    <header>
+      <h1><a href="" class="logo2">製程安全管理資訊應用與交流網站</a></h1>
+      <!-- <h1><a href="#" class="logo2">製程安全管理資訊應用與交流網站</a></h1> -->
+      <nav>   
+        <ul>
+          <a href="#U" id="U" name="U" title="上方區塊" accesskey="U" class="sr-only sr-only-focusable">:::</a>                
+
+          <!--正式機板 -->
+          <li><a href="/hwripsm/login.action">首頁</a></li>
+          <li><a href="/hwripsm/public/sitemap.action">網站導覽</a></li>
+          <li><a href="https://hwri.osha.gov.tw/hwripsm/login.action" target="_blank" title="另開新視窗">危險性工作場所資訊管理系統</a></li>                
+        </ul>
+      </nav>
+
+    </header>
+    <main class="clear-fix">
+
+      <div class="Center">
+        <div id="Breadcrumb">
+          <ol class="Breadcrumb">
+            <li><a href="#">首頁</a></li>
+            <li class="active">設備管線劣化機制查詢</li>
+          </ol>
+        </div>
+
+        <!--spTable3 Start-->
+        <div class="box spTable3">
+          <h2>腐蝕劣化機制資訊</h2>
+
+          <!-- <ul class="info">
+            <li>發布日期:<span>2020-08-10</span></li>
+          </ul> -->
+
+          <table cellspacing="0" cellpadding="0" width="100%" summary="*" border="1">
+            <tr>
+              <th scope="col" width="20%" class="aRight">DM編號：</th>
+              <td>31</td>
+            </tr>
+            <tr>
+              <th scope="col" class="aRight">名稱：</th>
+              <td>脆性斷裂 Brittle Fracture</td>
+            </tr>
+            <tr>
+              <th scope="col" class="aRight">描述：</th>
+              <td>金屬在受力狀況下，沒有發生明顯的塑性形變而斷裂的現象，此為突發性破裂而使設備失效。</td>
+            </tr>
+            <tr>
+              <th scope="col" class="aRight">設備/組件材質：</th>
+              <td>
+                <ol>
+                  <li>碳鋼</li>
+                  <li>低合金鋼</li>
+                  <li>400系列不銹鋼</li>
+                </ol>
+              </td>
+            </tr>
+            <tr>
+              <th scope="col" class="aRight">運轉環境與發生條件：</th>
+              <td>
+                符合下列其中一種條件：
+                <ol>
+                  <li>低溫操作：操作溫度低於金屬韌脆轉換溫度。</li>
+                  <li>設備/組件為脆性材質且具有瑕疵(flaw)。</li>
+                </ol>
+                脆性材質：金屬因相關脆化機制產生脆性相(embrittling phases)。
+              </td>
+            </tr>
+            <tr>
+              <th scope="col" class="aRight">其他說明：</th>
+              <td>
+                <ol>
+                  <li>若設備/組件具有瑕疵(flaw)，瑕疵大小/形狀/應力集中效應、瑕疵受應力作用大小等因素，會影響脆性破裂是否發生。</li>
+                  <li>材質破裂韌性(抗破裂能力)：<br>
+                    2a.設備/組件壁厚較大，抵抗脆性破裂能力較差，因裂紋尖端(crack tip)三軸向應力會提高。<br>
+                    2b.鋼材清淨度(steel cleanliness)及晶粒大小影響材質破裂韌性。<br>
+                  2c.設備/組件所處溫度低於自身材質的韌脆轉換溫度，破裂韌性大幅下降，容易發生脆性破裂。</li>
+                </ol>
+              </td>
+            </tr>
+            <tr>
+              <th scope="col" class="aRight">常發生的製程單元或設備：</th>
+              <td>
+                <ol>
+                  <li>大多數製程為升溫製程，應注意起機、停機及水壓測試時可能發生脆性破裂，特別是厚度較大的設備/組件。</li>
+                  <li>輕質碳氫化合物處理單元(內容物如甲烷、乙烷/乙烯、/丙烷/丙烯或丙烷)在自動冷凍處理階段(autorefrigeration event)可能發生脆性破裂plants)。</li>
+                  <li>低破裂韌性材料在常溫高應力作用下，可能發生脆性破裂，例如水壓測試。</li>
+                </ol>
+              </td>
+            </tr>
+            <tr>
+              <th scope="col" class="aRight">檢測或監測方法：</th>
+              <td>
+                <ol>
+                  <li>針對可能發生脆性破裂的設備/組件，可利用磁粒探傷(MT)、液滲檢測(PT)或超音波探傷(UT)等方式檢測設備/組件是否存在瑕疵或缺陷。</li>
+                  <li>針對設備高應力位置進行週期性檢測。</li>
+                </ol>
+              </td>
+            </tr>
+            <tr>
+              <th scope="col" class="aRight">預防或減緩措施：</th>
+              <td>
+                <ol>
+                  <li>脆性破裂一種事件性的劣化機制，受應力作用、材質破裂韌性、瑕疵大小會主導脆性破裂發生的可能性。</li>
+                  <li>預防脆性破裂的方法包括控制操作條件(例如溫度/壓力)、減少室溫下(起停機)的操作壓力。</li>
+                  <li>設備/組件製造後或維修/修改變更，銲道進行銲後熱處理(PWHT)，可減少脆性破裂發生的可能性。</li>
+                </ol>
+              </td>
+            </tr>
+            <tr>
+              <th scope="col" class="aRight">損傷外觀：</th>
+              <td>
+                <p class="imglist">
+                  <a href="images/pic01.jpg" data-fancybox="images" data-caption="圖片說明">
+                    <img src="images/pic01.jpg" />
+                  </a>
+                  <a href="images/pic02.jpg" data-fancybox="images" data-caption="圖片說明圖片說明圖片說明">
+                    <img src="images/pic02.jpg" />
+                  </a>
+                </p>
+                <div class="imginfo">碳鋼管線/設備在水壓測試(hydrotest)時發生脆性破裂</div>
+                <p class="imglist">
+                  <a href="images/pic01.jpg" data-fancybox="images" data-caption="圖片說明">
+                    <img src="images/pic01.jpg" />
+                  </a>
+                  <a href="images/pic02.jpg" data-fancybox="images" data-caption="圖片說明圖片說明圖片說明">
+                    <img src="images/pic02.jpg" />
+                  </a>
+                  <a href="images/pic01.jpg" data-fancybox="images" data-caption="圖片說明">
+                    <img src="images/pic01.jpg" />
+                  </a>
+                  <a href="images/pic02.jpg" data-fancybox="images" data-caption="圖片說明圖片說明圖片說明">
+                    <img src="images/pic02.jpg" />
+                  </a>
+                  <a href="images/pic01.jpg" data-fancybox="images" data-caption="圖片說明">
+                    <img src="images/pic01.jpg" />
+                  </a>
+                  <a href="images/pic02.jpg" data-fancybox="images" data-caption="圖片說明圖片說明圖片說明">
+                    <img src="images/pic02.jpg" />
+                  </a>
+                </p>
+                <div class="imginfo">損傷外觀通常直線無分支裂紋，無塑性變形特徵(沒有剪力唇破斷(shear-lips)現象、裂紋周邊局部頸縮(necking)現象)。</div>
+              </td>
+            </tr>
+          </table>
+
+
+
+        </div>
+        <!--spTable3 End-->
+
+
+      </div>
+    </main>
+    <footer>
+      <p>勞動部職業安全衛生署 版權所有© 2018 All Right Reserved&nbsp;&nbsp;&nbsp;開發單位：凌網科技股有限公司</p>
+    </footer>
+  </div>
+</body>
+</html>
+
+<script src="js/jquery.1.12.4.min.js"></script>
+
+<!-- fancybox js -->
+<script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+<script src="js/jquery.fancybox.min.js"></script>
+<script>
+  $('[data-fancybox="images"]').fancybox({
+    buttons : [ 
+    'slideShow',
+    'share',
+    'zoom',
+    'fullScreen',
+    'close'
+    ],
+    thumbs : {
+      autoStart : true
+    }
+  });
+</script>
+
+<script>
+  $('.Menu>ul>li:first-child>a').addClass('Active');
+  $('.Menu>ul>li>a').click(function(e){
+        // alert('有');
+        $('.Menu .One').removeClass('Active');
+        $(this).addClass('Active');
+      })
+    </script>

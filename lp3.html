@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>危險性工作場所登錄系統</title>
+  <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+  <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+    <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+    <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+  <![endif]-->
+  <link href="assets/fontello/css/fontello.css" rel="stylesheet">
+  <link href="css/layout.css" rel="stylesheet">
+</head>
+<body>
+	<div class="wrap mp">
+    <header>
+      <h1><a href="#" class="logo1">危險性工作場所登錄系統</a></h1>
+      <!-- <h1><a href="#" class="logo2">製程安全管理資訊應用與交流網站</a></h1> -->
+      <nav>   
+        <ul>
+          <li><a href="#">回首頁</a></li>
+          <li><a href="#">網站導覽</a></li>
+        </ul>
+      </nav>
+      <div class="user">
+        <span class="user-name">李大新</span>
+        <span class="login-date">107/07/01</span>
+      </div>
+    </header>
+    <main class="clear-fix">
+
+      <div class="Center">
+        <div id="Breadcrumb">
+          <ol class="Breadcrumb">
+            <li><a href="#">首頁</a></li>
+            <li class="active">最新消息</li>
+          </ol>
+        </div>
+
+        <div class="box Table">
+          <h2>訓練資訊</h2>
+          <!-- category -->
+          <div class="category">
+            <ul>
+              <li><a href="#">製程安全新知</a></li>
+              <li><a href="#">活動教材</a></li>
+              <li><a href="#">製程安全管理相關技術文件</a></li>
+            </ul>
+          </div>
+
+          <!-- page -->
+          <section class="Page">
+            每頁筆數：
+            <select name="" class="form-control" id="">
+              <option value="">30</option>
+              <option value="">50</option>
+              <option value="">100</option>
+            </select>
+            筆
+            &nbsp;&nbsp;
+            目前頁數：
+            <select name="" class="form-control" id="">
+              <option value="">1</option>
+              <option value="">2</option>
+              <option value="">3</option>
+              <option value="">4</option>
+              <option value="">5</option>
+            </select>
+            &nbsp;/&nbsp;
+            總頁數：<span class="total">1</span>頁
+            &nbsp;/&nbsp;
+            資料總筆數：<span class="total">100</span>筆
+          </section>
+          <div class="list">
+            <ul>
+              <li><a href="#"  name="contentdata" id="contentdata"> 勞動部職安署現已針對非列管範圍提供專用通關代碼，請業者自行評估是否適用後再行利用。</a><span class="date">2018-01-10</span></li>
+              <li><a href="#">「職業安全衛生法機械設備器具邊境管制及安全資訊申報登錄」 說明會</a><span class="date">2018-01-10</span></li>
+              <li><a href="#"  name="contentdata" id="contentdata"> 勞動部職安署現已針對非列管範圍提供專用通關代碼，請業者自行評估是否適用後再行利用。</a><span class="date">2018-01-10</span></li>
+              <li><a href="#">「職業安全衛生法機械設備器具邊境管制及安全資訊申報登錄」 說明會</a><span class="date">2018-01-10</span></li>
+              <li><a href="#"  name="contentdata" id="contentdata"> 勞動部職安署現已針對非列管範圍提供專用通關代碼，請業者自行評估是否適用後再行利用。</a><span class="date">2018-01-10</span></li>
+              <li><a href="#">「職業安全衛生法機械設備器具邊境管制及安全資訊申報登錄」 說明會</a><span class="date">2018-01-10</span></li>
+            </ul>
+          </div>
+
+
+        </div>
+      </main>
+      <footer>
+        <p>勞動部職業安全衛生署 版權所有© 2018 All Right Reserved&nbsp;&nbsp;&nbsp;開發單位：凌網科技股有限公司</p>
+      </footer>
+    </div>
+  </body>
+  </html>
+
+  <script src="js/jquery.1.12.4.min.js"></script>
+  <script>
+    $('.Menu>ul>li:first-child>a').addClass('Active');
+    $('.Menu>ul>li>a').click(function(e){
+        // alert('有');
+        $('.Menu .One').removeClass('Active');
+        $(this).addClass('Active');
+      })
+    </script>
